@@ -13,11 +13,14 @@ Create a function that takes an array of numbers. Return the largest number in t
 ## Solution
 
 ```javaScript
-function reverse(str) {
-  var rts = ""
-  for(var i = str.length-1; i >=  0; i--){
-    rts += str[i]
+function findlargestNum(arr){
+  var big = arr[0];
+  for(var i = 0; i < arr.length; i++){
+    if(big < arr[i]){
+      console.log(small)
+      big = arr[i]
+    }
   }
-  return rts;
+  return big
 }
 ```
